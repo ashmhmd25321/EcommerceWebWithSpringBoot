@@ -1,0 +1,10 @@
+INSERT INTO roles (id, name) VALUES
+(1, 'ROLE_ADMIN'),
+(2, 'ROLE_USER');
+
+insert into mydb.users (id, email, password, user_name, address, security_question, answer, gender, mobile_number) values
+(1, 'admin@gmail.com', '$2a$10$moTjfAVBJzNS32q7NPPVh.iAGDbZSkjZJBkdxT5ZLKQ3R1Vh/y9Fi', 'Admin', 'Colombo', 'who is your love', 'noone', 'Male', '0719101215');
+
+insert into mydb.user_role(user_id, role_id) values
+(1,1),
+(1,2);
